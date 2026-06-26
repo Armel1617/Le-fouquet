@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Explorez la carte fusion du restaurant Le Fouquet à Abomey-Calavi. Spécialités africaines, européennes et asiatiques raffinées, cuisinées avec passion et servies à prix locaux.">
+  <title>La Carte — Le Fouquet Restaurant</title>
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <img src="images/logo.jpg" alt="Le Fouquet Logo" class="preloader-logo">
+      <div class="preloader-spinner"></div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.jpg" alt="Le Fouquet Logo">
+        <span class="logo-text">Le Fouquet</span>
+      </a>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="carte.html" class="active">La Carte</a></li>
+          <li><a href="evenements.html">Événements</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="https://wa.me/22901913914?text=Bonjour%20Le%20Fouquet,%20je%20souhaite%20réserver%20une%20table%20pour%20ce%20soir."
+            target="_blank" class="glow-btn glow-btn-primary">
+            <i class="fa-brands fa-whatsapp"></i> Réserver
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/22901913914?text=Bonjour%20Le%20Fouquet,%20je%20souhaite%20réserver%20une%20table%20ou%20commander%20un%20plat."
+    target="_blank" class="whatsapp-float" aria-label="Réserver via WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Inner Hero Section -->
+  <section class="hero" style="min-height: 50vh; height: 50vh;">
+    <div class="hero-overlay"></div>
+    <img src="images/concept.jpg" alt="Plats raffinés signature du Fouquet" class="hero-bg"
+      style="filter: brightness(0.4) contrast(1.1);">
+    <div class="hero-content">
+      <span class="hero-tagline" style="opacity: 1; animation: none;">Gastronomie Fusion</span>
+      <h1 class="hero-title" style="opacity: 1; animation: none; font-size: clamp(2rem, 6vw, 3.5rem);">Notre
+        <span>Carte</span>
+      </h1>
+      <p class="hero-description" style="opacity: 1; animation: none; margin-bottom: 0; max-width: 650px;">
+        Découvrez un mariage audacieux de saveurs africaines, européennes et asiatiques, minutieusement élaboré par
+        notre chef pour enchanter vos papilles.
+      </p>
+    </div>
+  </section>
+
+  <!-- Menu Section with Filters -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Category Tabs -->
+      <div class="menu-tabs reveal">
+        <button class="tab-btn active" data-filter="all">Toute la carte</button>
+        <button class="tab-btn" data-filter="african">Mets Africains</button>
+        <button class="tab-btn" data-filter="european">Plats Européens</button>
+        <button class="tab-btn" data-filter="asian">Touches Asiatiques</button>
+        <button class="tab-btn" data-filter="beverage">Boissons & Cocktails</button>
+      </div>
+
+      <!-- Menu Grid -->
+      <div class="menu-grid reveal">
+
+        <!-- Item 1: Croustillant d'Attiéké aux Crevettes -->
+        <div class="menu-item" data-category="african">
+          <div class="menu-item-img-wrapper">
+            <span class="menu-item-badge">Entrée</span>
+            <img src="images/attieke.jpg" alt="Croustillant d'Attiéké aux Crevettes" class="menu-item-img">
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Croustillant d'Attiéké</h3>
+              <span class="menu-item-price">4 500 FCFA</span>
+            </div>
+            <p class="menu-item-desc">
+              Crevettes tigrées panées aux brisures d'Attiéké croustillant, accompagnées d'une sauce tartare maison
+              parfumée au citron vert.
+            </p>
+            <div class="menu-item-footer">
+              <span class="menu-item-spicy" title="Non épicé"></span>
+              <a href="https://wa.me/2290194942170?text=Bonjour%20Le%20Fouquet,%20je%20souhaite%20commander%20le%20plat%20%3A%20Croustillant%20d'Atti%C3%A9k%C3%A9%20aux%20Crevettes."
+                target="_blank" class="menu-item-order">
+                <i class="fa-brands fa-whatsapp"></i> Commander
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: Brochettes de Mouton au Kan Kan -->
+        <div class="menu-item" data-category="african">
+          <div class="menu-item-img-wrapper">
+            <span class="menu-item-badge">Plat</span>
+            <img src="images/kankan.jpg" alt="Brochettes de Mouton au Kan Kan" class="menu-item-img">
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Mouton Braisé Kan Kan</h3>
+              <span class="menu-item-price">6 500 FCFA</span>
+            </div>
+            <p class="menu-item-desc">
+              Brochettes de mouton juteuses marinées et assaisonnées au traditionnel mélange d'épices d'Afrique de
+              l'Ouest (Kan Kan), servies avec de l'alloco chaud.
+            </p>
+            <div class="menu-item-footer">
+              <span class="menu-item-spicy" title="Modérément épicé">
+                <i class="fa-solid fa-pepper-hot"></i>
+                <i class="fa-solid fa-pepper-hot"></i>
+              </span>
+              <a href="https://wa.me/2290194942170?text=Bonjour%20Le%20Fouquet,%20je%20souhaite%20commander%20le%20plat%20%3A%20Brochettes%20de%20Mouton%20au%20Kan%20Kan."
+                target="_blank" class="menu-item-order">
+                <i class="fa-brands fa-whatsapp"></i> Commander
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Filet de Capitaine à la Béninoise -->
+        <div class="menu-item" data-category="african">
+          <div class="menu-item-img-wrapper">
+            <span class="menu-item-badge">Spécialité</span>
+            <img src="images/capitaine.jpg" alt="Filet de Capitaine à la Béninoise" class="menu-item-img">
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Capitaine à la Béninoise</h3>
+              <span class="menu-item-price">8 500 FCFA</span>
+            </div>
+            <p class="menu-item-desc">
+              Pavé de poisson capitaine poêlé, nappe de sauce tomate parfumée aux piments locaux doux et poivrons,
+              accompagné d'Amiwo rouge traditionnel.
+            </p>
+            <div class="menu-item-footer">
+              <span class="menu-item-spicy" title="Très épicé">
+                <i class="fa-solid fa-pepper-hot"></i>
+                <i class="fa-solid fa-pepper-hot"></i>
+                <i class="fa-solid fa-pepper-hot"></i>
+              </span>
+              <a href="https://wa.me/2290194942170?text=Bonjour%20Le%20Fouquet,%20je%20souhaite%20commander%20le%20plat%20%3A%20Filet%20de%20Capitaine%20%C3%A0%20la%20B%C3%A9ninoise."
+                target="_blank" class="menu-item-order">
+                <i class="fa-brands fa-whatsapp"></i> Commander
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: Entrecôte grillée au beurre d'herbes -->
+        <div class="menu-item" data-category="european">
+          <div class="menu-item-img-wrapper">
+            <span class="menu-item-badge">Viande</span>
+            <img src="images/entrecote.jpg" alt="Entrecôte grillée au beurre d'herbes" class="menu-item-img">
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Entrecôte au Beurre d'Herbes</h3>
+              <span class="menu-item-price">12 000 FCFA</span>
+            </div>
+            <p class="menu-item-desc">
+              Pièce de bœuf tendre cuite à votre convenance, surmontée d'un généreux beurre maître d'hôtel maison,
+              servie avec des frites dorées.
+            </p>
+            <div class="menu-item-footer">
+              <span class="menu-item-spicy" title="Non épicé"></span>
+              <a href="https://wa.me/2290194942170?text=Bonjour%20Le%20Fouquet,%20je%20souhaite%20commander%20le%20plat%20%3A%20Entrec%C3%B4te%20grill%C3%A9e%20au%20beurre%20d'herbes."
+                target="_blank" class="menu-item-order">
+                <i class="fa-brands fa-whatsapp"></i> Commander
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5: Filet Mignon à la Moutarde -->
+        <div class="menu-item" data-category="european">
+          <div class="menu-item-img-wrapper">
+            <span class="menu-item-badge">Plat</span>
+            <img src="images/filet.jpg" alt="Filet Mignon à la Moutarde" class="menu-item-img">
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Filet Mignon Moutarde</h3>
+              <span class="menu-item-price">9 500 FCFA</span>
+            </div>
+            <p class="menu-item-desc">
+              Médaillons de filet mignon de porc saisis, sauce crémeuse à la moutarde à l'ancienne, accompagnés d'une
+              écrasée de pommes de terre au beurre.
+            </p>
+            <div class="menu-item-footer">
+              <span class="menu-item-spicy" title="Non épicé"></span>
+              <a href="https://wa.me/2290194942170?text=Bonjour%20Le%20Fouquet,%20je%20souhaite%20commander%20le%20plat%20%3A%20Filet%20Mignon%20%C3%A0%20la%20Moutarde."
+                target="_blank" class="menu-item-order">
+                <i class="fa-brands fa-whatsapp"></i> Commander
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6: Wok de Bœuf Tataki au sésame -->
+        <div class="menu-item" data-category="asian">
+          <div class="menu-item-img-wrapper">
+            <span class="menu-item-badge">Wok</span>
+            <img src="images/wok.jpg" alt="Wok de Bœuf Tataki au sésame" class="menu-item-img">
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Wok Bœuf Tataki</h3>
+              <span class="menu-item-price">7 500 FCFA</span>
+            </div>
+            <p class="menu-item-desc">
+              Lanières de bœuf saisies à vif au wok, légumes croquants, sauce soja artisanale au gingembre frais et
+              graines de sésame, riz jasmin.
+            </p>
+            <div class="menu-item-footer">
+              <span class="menu-item-spicy" title="Légèrement épicé">
+                <i class="fa-solid fa-pepper-hot"></i>
+              </span>
+              <a href="https://wa.me/2290194942170?text=Bonjour%20Le%20Fouquet,%20je%20souhaite%20commander%20le%20plat%20%3A%20Wok%20de%20B%C5%93uf%20Tataki%20au%20s%C3%A9same."
+                target="_blank" class="menu-item-order">
+                <i class="fa-brands fa-whatsapp"></i> Commander
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 7: Poulet Général Tso à l'Africaine -->
+        <div class="menu-item" data-category="asian">
+          <div class="menu-item-img-wrapper">
+            <span class="menu-item-badge">Fusion</span>
+            <img src="images/poulet.jpg" alt="Poulet Général Tso à l'Africaine" class="menu-item-img">
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Poulet Général Tso Fusion</h3>
+              <span class="menu-item-price">7 000 FCFA</span>
+            </div>
+            <p class="menu-item-desc">
+              Bouchées de poulet croustillantes enrobées d'une sauce aigre-douce pimentée à l'ail, servies avec un riz
+              sauté parfumé aux ananas locaux.
+            </p>
+            <div class="menu-item-footer">
+              <span class="menu-item-spicy" title="Modérément épicé">
+                <i class="fa-solid fa-pepper-hot"></i>
+                <i class="fa-solid fa-pepper-hot"></i>
+              </span>
+              <a href="https://wa.me/2290194942170?text=Bonjour%20Le%20Fouquet,%20je%20souhaite%20commander%20le%20plat%20%3A%20Poulet%20G%C3%A9n%C3%A9ral%20Tso%20%C3%A0%20l'Africaine."
+                target="_blank" class="menu-item-order">
+                <i class="fa-brands fa-whatsapp"></i> Commander
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 8: Cocktail Signature Fouquet -->
+        <div class="menu-item" data-category="beverage">
+          <div class="menu-item-img-wrapper">
+            <span class="menu-item-badge">Cocktail</span>
+            <img src="images/cooktail.jpg" alt="Cocktail Signature Le Fouquet" class="menu-item-img">
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Le Cocktail "Fouquet"</h3>
+              <span class="menu-item-price">3 500 FCFA</span>
+            </div>
+            <p class="menu-item-desc">
+              Création exclusive : Rhum blanc premium, jus de mangue et fruit de la passion frais, infusion concentrée
+              de bissap, zeste de gingembre.
+            </p>
+            <div class="menu-item-footer">
+              <span class="menu-item-spicy" title="Alcoolisé">
+                <i class="fa-solid fa-glass-martini-alt" style="color: var(--gold-warm)"></i>
+              </span>
+              <a href="https://wa.me/2290194942170?text=Bonjour%20Le%20Fouquet,%20je%20souhaite%20commander%20la%20boisson%20%3A%20Cocktail%20Signature%20Fouquet."
+                target="_blank" class="menu-item-order">
+                <i class="fa-brands fa-whatsapp"></i> Commander
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 9: Virgin Mojito Passion -->
+        <div class="menu-item" data-category="beverage">
+          <div class="menu-item-img-wrapper">
+            <span class="menu-item-badge">Mocktail</span>
+            <img src="images/virgin.jpg" alt="Virgin Mojito Passion" class="menu-item-img">
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Virgin Mojito Passion</h3>
+              <span class="menu-item-price">2 500 FCFA</span>
+            </div>
+            <p class="menu-item-desc">
+              Feuilles de menthe fraîche pilées, quartiers de citron vert, pulpe de fruits de la passion, sucre de canne
+              et eau pétillante fraîche.
+            </p>
+            <div class="menu-item-footer">
+              <span class="menu-item-spicy" title="Sans Alcool">
+                <i class="fa-solid fa-leaf" style="color: var(--logo-green)"></i>
+              </span>
+              <a href="https://wa.me/2290194942170?text=Bonjour%20Le%20Fouquet,%20je%20souhaite%20commander%20la%20boisson%20%3A%20Virgin%20Mojito%20Passion."
+                target="_blank" class="menu-item-order">
+                <i class="fa-brands fa-whatsapp"></i> Commander
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo" style="margin-bottom: 10px;">
+          <img src="images/logo.jpg" alt="Le Fouquet Logo">
+          <span class="logo-text">Le Fouquet</span>
+        </a>
+        <p class="footer-about-text">
+          Une expérience gastronomique unique mariant mets africains, européens et asiatiques dans une ambiance festive
+          et conviviale à Abomey-Calavi.
+        </p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/lefouquet229/" target="_blank" class="social-icon" aria-label="Facebook"><i
+              class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://instagram.com/lefouquet" target="_blank" class="social-icon" aria-label="Instagram"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://tiktok.com/@restfouquet" target="_blank" class="social-icon" aria-label="TikTok"><i
+              class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="carte.html">La Carte</a></li>
+          <li><a href="evenements.html">Événements</a></li>
+          <li><a href="contact.html">Contact & Accès</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Contact</h4>
+        <ul class="footer-links"
+          style="color: var(--text-muted); font-size: 0.95rem; display: flex; flex-direction: column; gap: 10px;">
+          <li><i class="fa-solid fa-location-dot text-logo-green" style="margin-right: 8px;"></i> Zopah, nouveau
+            goudron, Abomey-Calavi, Bénin</li>
+          <li><i class="fa-solid fa-phone text-logo-green" style="margin-right: 8px;"></i> <a
+              href="tel:+2290194942170">+229 01 94 94 21 70</a></li>
+          <li><i class="fa-solid fa-phone text-logo-green" style="margin-right: 8px;"></i> <a
+              href="tel:+2290191391414">+229 01 91 39 14 14</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Horaires d'Ouverture</h4>
+        <ul class="footer-links"
+          style="color: var(--text-muted); font-size: 0.95rem; display: flex; flex-direction: column; gap: 10px;">
+          <li>Mardi - Jeudi : 12h00 - 23h00</li>
+          <li>Vendredi - Samedi : 12h00 - 02h00 (Live Music)</li>
+          <li>Dimanche : 15h00 - 23h00</li>
+          <li>Lundi : Fermé</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Le Fouquet Restaurant. Tous droits réservés.</p>
+      <p>Conçu avec passion pour Calavi</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
